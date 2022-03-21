@@ -13,6 +13,8 @@ namespace Atm
 {
     public partial class Form1 : Form
     {
+
+        SQLQueries myQueries = new SQLQueries();
         public Form1()
         {
             InitializeComponent();
@@ -20,33 +22,29 @@ namespace Atm
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("server=localhost;database=AccountingSys;UID=sa;password=123456789");
-            SqlCommand cmd = new SqlCommand("select * from Userlogins where UserName=@UserName and Password =@Password", con);
-            cmd.Parameters.AddWithValue("@UserName", textBox1.Text);
-            cmd.Parameters.AddWithValue("@Password", textBox2.Text);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            //Connection open here   
-            con.Open();
-            //int i = cmd.ExecuteNonQuery();
-
-            con.Close();
-            if (dt.Rows.Count > 0)
+            try
             {
+                DataTable dt = new DataTable();
+                dt = myQueries.IdentifierUser(userNamebox.Text, passwordBox.Text);
 
-                MessageBox.Show("Successfully loged in");
-                //after successful it will redirect  to next page .  
-                //WelcomePage settingsForm = new WelcomePage(dt.Rows[0][1].ToString(), dt.Rows[0][0].ToString());
+                if (dt.Rows.Count > 0)
+                {
+                    this.Hide();
+                    MainForm startMain = new MainForm(dt.Rows[0][0].ToString(), dt.Rows[0][3].ToString());
+                    startMain.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Username or Password");
+                }
 
-                //this.Hide();
-                //settingsForm.ShowDialog();
-                //this.Close();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Please enter Correct Username and Password");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
     }
 }

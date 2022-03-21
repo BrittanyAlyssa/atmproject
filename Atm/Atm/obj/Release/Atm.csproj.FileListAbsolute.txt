@@ -1,0 +1,5 @@
+C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Release\Atm.Form1.resources
+C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Release\Atm.MainForm.resources
+C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Release\Atm.Properties.Resources.resources
+C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Release\Atm.csproj.GenerateResource.cache
+C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Release\Atm.csproj.CoreCompileInputs.cache

@@ -34,7 +34,9 @@ namespace Atm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            WithdrawForm new
+            WithdrawForm newWithdraw = new WithdrawForm(UserId);
+            newWithdraw.ShowDialog();
+
         }
     }
 }

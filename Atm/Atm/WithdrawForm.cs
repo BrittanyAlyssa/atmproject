@@ -15,10 +15,10 @@ namespace Atm
 
         SQLQueries queries = new SQLQueries();
         public int UserId;
-        public WithdrawForm(string id)
+        public WithdrawForm(int id)
         {
             InitializeComponent();
-            UserId = Convert.ToInt32(id);
+            UserId = id;
         }
 
         private void WithdrawForm_Load(object sender, EventArgs e)
@@ -46,6 +46,11 @@ namespace Atm
                 }
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

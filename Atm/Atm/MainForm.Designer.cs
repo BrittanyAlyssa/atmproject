@@ -33,11 +33,11 @@ namespace Atm
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DepositBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.WithdrawBox = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DepositBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WithdrawBox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -71,16 +71,16 @@ namespace Atm
             this.DepositBox.TabStop = false;
             this.DepositBox.Click += new System.EventHandler(this.DepositBox_Click);
             // 
-            // pictureBox2
+            // WithdrawBox
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(21, 255);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 134);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.WithdrawBox.Image = ((System.Drawing.Image)(resources.GetObject("WithdrawBox.Image")));
+            this.WithdrawBox.Location = new System.Drawing.Point(21, 255);
+            this.WithdrawBox.Name = "WithdrawBox";
+            this.WithdrawBox.Size = new System.Drawing.Size(158, 134);
+            this.WithdrawBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.WithdrawBox.TabIndex = 3;
+            this.WithdrawBox.TabStop = false;
+            this.WithdrawBox.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label3
             // 
@@ -109,7 +109,7 @@ namespace Atm
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.WithdrawBox);
             this.Controls.Add(this.DepositBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -117,7 +117,7 @@ namespace Atm
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DepositBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WithdrawBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,7 +128,7 @@ namespace Atm
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox DepositBox;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox WithdrawBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }

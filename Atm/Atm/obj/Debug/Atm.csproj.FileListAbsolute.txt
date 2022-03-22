@@ -10,3 +10,16 @@ C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Debug\Atm.csproj.CoreCompileInp
 C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Debug\Atm.exe
 C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Debug\Atm.pdb
 C:\Users\LAB\Desktop\atmproject-main\Atm\Atm\obj\Debug\Atm.DepositForm.resources
+C:\Users\LAB\Desktop\Atm\Atm\bin\Debug\Atm.exe.config
+C:\Users\LAB\Desktop\Atm\Atm\bin\Debug\Atm.exe
+C:\Users\LAB\Desktop\Atm\Atm\bin\Debug\Atm.pdb
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.csproj.AssemblyReference.cache
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.DepositForm.resources
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.Form1.resources
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.MainForm.resources
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.Properties.Resources.resources
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.csproj.GenerateResource.cache
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.csproj.CoreCompileInputs.cache
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.exe
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.pdb
+C:\Users\LAB\Desktop\Atm\Atm\obj\Debug\Atm.WithdrawForm.resources

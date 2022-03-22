@@ -66,6 +66,13 @@ namespace Atm
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Car Payment",
+            "Entertainment",
+            "Insurance",
+            "Mortgage",
+            "Other",
+            "Utilities"});
             this.comboBox1.Location = new System.Drawing.Point(300, 65);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
@@ -130,7 +137,7 @@ namespace Atm
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(200, 32);
             this.ExitBtn.TabIndex = 9;
-            this.ExitBtn.Text = "exit";
+            this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
